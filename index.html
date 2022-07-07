@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    
     <title>Data Entry Form</title>
 
     <style>
@@ -28,6 +29,9 @@
             margin: auto;
             width: 100%;
         }
+        input::placeholder{
+            padding-left: 10px; ;
+        }
     </style>
 </head>
 <body>
@@ -40,30 +44,30 @@
             Link-->
             <form  method="post" action="" >
                 <label for="name">Name:</label> <br>
-                <input type="text" name="name" id="name">
+                <input type="text" name="name" id="name" placeholder="John Doe">
                 <br>
                 <br>
                 <label for="Title">Title:</label>  <br>
-                <input type="text" name="title" id="email">
+                <input type="text" name="title" id="title" placeholder="Title">
                 <br>
                 <br>
                 <label for="Resource">Resource:</label>   <br>
-                <input type="text" name="resource" id="resource">
+                <input type="text" name="resource" id="resource" placeholder="Resources">
                 <br>
                 <br>
                 <label for="Description">Description:</label>  <br>
-                <input type="password" name="description" id="description">
+                <input type="text" name="description" id="description" placeholder="Describe">
                 <br>
                 <br>
                 <label for="link">Link:</label>  <br>
-                <input type="url" name="link" id="link">
+                <input type="url" name="link" id="link" placeholder="https://www.bongo.com">
                 <br>
                 <br>
-                <button class=" m-2 bg-[#E92C9E] rounded-lg" id="button">Submit</button>
+                <button type ="submit" class="m-2 bg-[#E92C9E] rounded-lg" id="button" onsubmit="print()">Submit</button>
             </form>
         </section>
     
-
-    <script src="index.js"></script>
+        <script src="index.js"></script>
+    
 </body>
 </html>
